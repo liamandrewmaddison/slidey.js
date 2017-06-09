@@ -1,0 +1,88 @@
+body{
+  background: #eee;
+  padding: 0;
+}
+.container{
+  margin: 60px auto;
+  width: 600px;
+}
+
+/*-------------------/
+  Slidey CSS
+/--------------------*/
+.image-slider {
+  overflow: hidden;
+  position: relative;
+}
+.image-slider:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.image-slider:hover {
+  cursor: -webkit-grab;
+}
+.image-slider__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.25s ease-out;
+}
+.image-slider__list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.image-slider__list--no-animation {
+  transition: all 0s ease-out;
+}
+.image-slider__image {
+  float: left;
+}
+.image-slider__image img {
+  pointer-events: none;
+}
+.image-slider__buttons a {
+  position: absolute;
+  padding: 10px 15px;
+  text-decoration: none;
+  transform: translate3d(0, -50%, 0);
+  top: 50%;
+  background: #000;
+  color: #fff;
+}
+.image-slider__buttons a i {
+  line-height: 0;
+}
+.image-slider__next {
+  right: 0;
+}
+.image-slider__left {
+  left: 0;
+}
+.image-slider__dots {
+  position: absolute;
+  transform: translate3d(-50%, 0, 0);
+  left: 50%;
+  bottom: 15px;
+}
+.image-slider__dots a {
+  margin-left: 15px;
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  height: 20px;
+  width: 20px;
+  float: left;
+  transition: all 0.25s ease-out;
+}
+.image-slider__dots a:first-child {
+  margin-left: 0;
+}
+.image-slider__dots a.image-slider__dot--active {
+  background: #fff;
+  transform: scale(1.2);
+}
+/*-------------------/
+  Slidey CSS
+/--------------------*/

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slidey.js</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-slider">
+            <ul class="image-slider__list">
+                <li class="image-slider__image">
+                    <img style="display: none;" src="http://via.placeholder.com/600x800">
+                </li>
+                <li class="image-slider__image">
+                    <img style="display: none;" src="http://via.placeholder.com/600x800">
+                </li>
+                <li class="image-slider__image">
+                    <img style="display: none;" src="http://via.placeholder.com/600x800">
+                </li>
+            </ul>
+            <div class="image-slider__buttons">
+                <a href="javascript:;" class="image-slider__next">
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+                <a href="javascript:;" class="image-slider__prev">
+                    <i class="fa fa-chevron-left"></i>
+                </a>
+            </div>
+            <div class="image-slider__dots"></div>
+        </div>
+    </div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+<script type="text/javascript" src="slidey.js"></script>
+<script type="text/javascript">
+    imageSlider();
+</script>
+</html>
