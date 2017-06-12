@@ -9,7 +9,7 @@ var imageSlider = function (options) {
 
 	if (opts.parent.length > 1) {
 		return opts.parent.each(function(i, elem){
-			app.imageSlider({
+			imageSlider({
 				parent: $(elem),
 				threshold: opts.threshold
 			});
