@@ -1,4 +1,4 @@
-var imageSlider = function (options) {
+var Slidey = function (options) {
 
 	var opts = {
 		parent: $('.image-slider'),
@@ -9,7 +9,7 @@ var imageSlider = function (options) {
 
 	if (opts.parent.length > 1) {
 		return opts.parent.each(function(i, elem){
-			imageSlider({
+			Slidey({
 				parent: $(elem),
 				threshold: opts.threshold
 			});
@@ -20,7 +20,7 @@ var imageSlider = function (options) {
 		dots: '{{#dots}}<a href="javascript:;" data-id="{{i}}" class="image-slider__dot"></a>{{/dots}}',
 	};
 
-	var imageSliderModule = {
+	var SlideyModule = {
 		store: {
 			threshold: opts.threshold, //percentage
 			index: 0,
@@ -199,5 +199,5 @@ var imageSlider = function (options) {
 		}
 	};
 
-	return imageSliderModule.init();
+	return SlideyModule.init();
 };
