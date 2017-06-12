@@ -6,12 +6,12 @@ Slidey has only one configuration option, which is the threshold of when Slidey 
 
 The default is 10%.
 ```javascript
-imageSlider();
+Slidey();
 ```
 
 To change this setting simply do:
 ```javascript
-imageSlider({
+Slidey({
   threshold: 30,
 });
 ```
@@ -20,7 +20,7 @@ Slidey will automatically initialized itself on every element on the page that h
 
 You can also change this by simply doing:
 ```javascript
-imageSlider({
+Slidey({
   parent: $('.your-swag-class'),
 });
 ```
