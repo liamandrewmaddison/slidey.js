@@ -1,5 +1,5 @@
 # slidey.js
-Simple image slider, mobile ready. The most simple but effection slider out there!
+Simple image slider, mobile ready. The most simple but effective slider out there!
 
 ## Usage
 Slidey has only one configuration option, which is the threshold of when Slidey should go over to the next image when user is dragging. This is a percentage and is calculated on how much the mouse has travelled.
